@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emy & Jack - Matrimonio</title>
+    <style>
+        body {
+            background-color: #F1E3E2;
+            color: #9E3F66;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        nav {
+            background: #9E3F66;
+            color: #F1E3E2;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            color: #F1E3E2;
+            margin: 0 1em;
+            text-decoration: none;
+        }
+        .gallery {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 2em;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-100%); }
+        }
+        section {
+            padding: 2em;
+            margin: 2em 0;
+        }
+        .map {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#cerimonia">Cerimonia</a>
+        <a href="#ricevimento">Ricevimento</a>
+        <a href="#lista-nozze">Lista nozze</a>
+        <a href="#rsvp">RSVP</a>
+    </nav>
+
+    <header>
+        <h1>Emy & Jack</h1>
+        <h2>14 novembre ore 11.00</h2>
+    </header>
+
+    <div class="gallery">
+        <img src="https://via.placeholder.com/800x300" alt="Foto 1">
+        <img src="https://via.placeholder.com/800x300" alt="Foto 2">
+        <img src="https://via.placeholder.com/800x300" alt="Foto 3">
+    </div>
+
+    <section id="cerimonia">
+        <h2>Cerimonia</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. La cerimonia si terrà presso [luogo] alle [orario].</p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284537258!2d12.45449931531888!3d41.93396497921868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f619d0f0a0b1b%3A0x8f0b0b0b0b0b0b0b!2sStadio%20Olimpico%2C%20Roma!5e0!3m2!1sit!2sit!4v1616581234567!5m2!1sit!2sit" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="ricevimento">
+        <h2>Ricevimento</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Il ricevimento si terrà presso [luogo].</p>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019284537258!2d-115.17281631531888!3d36.11464797921868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c4370b0b0b0b%3A0x8f0b0b0b0b0b0b!2sCaesars%20Palace%2C%20Las%20Vegas!5e0!3m2!1sit!2sit!4v1616581234567!5m2!1sit!2sit" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <section id="lista-nozze">
+        <h2>Lista nozze</h2>
+        <p>Se volete contribuire a costruire la nostra nuova famiglia potete inviare un regalo all'iban INSERIRE IBAN con causale REGALO EMY E JACK.</p>
+    </section>
+
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <p>Per favore, conferma la tua presenza compilando il modulo qui sotto:</p>
+        <p>QUI CI VA IL LINK DELL'EMBED</p>
+    </section>
+</body>
+</html>
